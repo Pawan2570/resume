@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #007bff;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Contact Information */
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+section {
+    margin: 20px 0;
+}
+
+section h3 {
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* List Styles */  
+
+
+ul li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    
+}
+
+ul li:nth-child(even) {
+    background: #f8f9fa;
+}
+
+
+
+
+button, .btn-link {
+    
+    background-color: #007bff;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+button:hover, .btn-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Lift up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #007bff;
+    margin: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h3 {
+        font-size: 1.2em;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+}
